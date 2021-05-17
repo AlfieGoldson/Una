@@ -1,6 +1,10 @@
 #!/bin/bash
 
+$title "Programs"
+
 cd programs
 
-sudo sh ./oh-my-zsh.sh
-sudo sh ./node.sh
+sh ./oh-my-zsh.sh
+sh ./node.sh
+sh ./deno.sh
+sh ./ganache.sh

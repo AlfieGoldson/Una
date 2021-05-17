@@ -1,15 +1,16 @@
 #!/bin/bash
 
-sudo apt update
+$title "Apt Install"
 
 install() {
   which $1 &> /dev/null
 
   if [ $? -ne 0 ]; then
-    echo "Installing: ${1}..."
+    $info "Installing $1"
     sudo apt install -y $1
+    $success "Sucessfully Installed $1" $(which $1)
   else
-    echo "\e[37m$1\e[39m is Already Installed"
+    $info $1 "Already Installed"
   fi
 }
 

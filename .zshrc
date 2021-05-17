@@ -41,9 +41,9 @@ $ gp() { git push; }
 source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-export DENO_INSTALL="/home/alfie/.deno"
+export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
-export PATH="/home/alfie/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0.0"
 export LIBGL_ALWAYS_INDIRECT=1
 
