@@ -1,10 +1,5 @@
 #!/bin/bash
 
-echo "Creating tmp directory (~/tmp)"
-
-mkdir -p ~/tmp
-cd ~/tmp
-
 echo "Starting AppImage download"
 
 curl -s -L https://api.github.com/repos/trufflesuite/ganache/releases/latest \
