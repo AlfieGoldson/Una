@@ -44,8 +44,11 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$(yarn global bin):$PATH"
 export DISPLAY="`grep nameserver /etc/resolv.conf | sed 's/nameserver //'`:0.0"
 export LIBGL_ALWAYS_INDIRECT=1
 
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 export LIBGL_ALWAYS_INDIRECT=true
+
+cd ~

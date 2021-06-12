@@ -1,0 +1,26 @@
+{
+	"name": "Una",
+
+	"cursorColor": "#f8f8f0",
+	"selectionBackground": "#db784d",
+
+	"background": "#36312c",
+	"foreground": "#ebd1b7",
+
+	"black": "#7a7267",
+	"blue": "#6184D8",
+	"cyan": "#279AF1",
+	"green": "#95cc5e",
+	"purple": "#9d37fc",
+	"red": "#cf433e",
+	"white": "#f8f8f0",
+	"yellow": "#f8bb39",
+	"brightBlack": "#7a7267",
+	"brightBlue": "#6184D8",
+	"brightCyan": "#279AF1",
+	"brightGreen": "#95cc5e",
+	"brightPurple": "#9d37fc",
+	"brightRed": "#cf433e",
+	"brightWhite": "#f8f8f0",
+	"brightYellow": "#f8bb39"
+}
