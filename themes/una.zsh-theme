@@ -1,13 +1,5 @@
 local LC_ALL="" LC_CTYPE="en_US.UTF-8"
 
-autoload -U colors && colors
-
-CURRENT_FG='white'
-
-# Characters
-ARROW_RIGHT=$'\u27a7' # ➧
-GIT_BRANCH_CHAR=$'\ue0a0' # 
-
 #Load Colors
 load_colors() {
   autoload colors && colors
