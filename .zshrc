@@ -2,6 +2,7 @@ export ZSH="/home/alfie/.oh-my-zsh"
 
 # Theme
 ZSH_THEME="una"
+UNA_PATH="~/.una"
 
 # Config
 HYPHEN_INSENSITIVE="true"
@@ -13,6 +14,7 @@ plugins=(git nvm)
 
 # Aliases
 alias exp="explorer.exe"
+alias proj="/mnt/c/Users/Alfie/Documents/Projects"
 alias ch="ld /mnt/c/Users/Alfie/Documents/Projects/Corehalla/Corehalla\ Neue/monorepo"
 alias moonshot="ld /mnt/c/Users/Alfie/Documents/Projects/Brawlhalla/moonshot"
 alias raku="ld /mnt/c/Users/Alfie/Documents/Projects/Code/Raku"
@@ -26,6 +28,7 @@ alias bfl="ld Documents/Projects/BFL"
 alias raku="ld Documents/Projects/Code/Raku"
 alias dock="sudo service docker start"
 alias marc="make"
+alias cmd="cmd.exe"
 
 alias ganache="~/bin/ganache/AppRun"
 alias twitch="~/bin/twitch_rig/AppRun"

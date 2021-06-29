@@ -52,12 +52,22 @@ prompt_git() {
   echo -n ${vcs_info_msg_0_}$reset_colors
 }
 
+# local NODEPKG_PATH="${UNA_PATH}/plugins/nodepkg/nodepkg"
+
 prompt_node() {
   PCKG_JSON="$(pwd)/package.json"
-  if [ -f "$PCKG_JSON" ]; then
-    echo -n "$blue :: $reset_colors"
-    echo -n "$black(nvm)$reset_colors node $green$(node -v)$reset_colors"
+  if [ ! -f "$PCKG_JSON" ]; then
+    return
   fi
+  echo -n "  $black↳ (nvm)$reset_colors node $green$(node -v)$reset_colors"
+  # echo $NODEPKG_PATH
+  # $NODEPKG_PATH
+  # if [ ! -f "$NODEPKG_PATH" ]; then
+  #   # chmod u+x $NODEPKG_PATH
+  #   return
+  # fi
+  # $NODEPKG_PATH
+  
 }
 
 build_prompt() {
@@ -68,9 +78,9 @@ build_prompt() {
   prompt_user
   prompt_time
   prompt_git
-  prompt_node
   # echo -n "$green⎝ $reset_fg"
-  echo -n "$black)$reset_fg"
+  echo "$black)$reset_fg"
+  prompt_node
   echo
   prompt_dir
   prompt_end
